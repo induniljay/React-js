@@ -43,13 +43,19 @@ function ProfileData(props) {
 
 function Tags(props) {
   return (
-    <div className="tagContainer">
+    <ul className="tagContainer">
       {props.skills.map((skill) => (
-        <article style={{ backgroundColor: skill.color }}>
-          <p>{skill.name}</p>
-        </article>
+        <Item skill={skill} />
       ))}
-    </div>
+    </ul>
+  );
+}
+
+function Item({ skill }) {
+  return (
+    <article style={{ backgroundColor: skill.color }}>
+      <p>{skill.name}</p>
+    </article>
   );
 }
 
