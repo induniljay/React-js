@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  background-color: aquamarine;
+  padding: 50px;
+}
+
+.stepContainer,
+.countContainer {
+  width: 60%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.stepContainer button,
+.countContainer button {
+  padding: 8px 20px;
+  border: none;
+  font-size: 24px;
+}
+
+.text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
