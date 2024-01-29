@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+  color: #fff;
+}
+
+.container {
+  background-color: dimgrey;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputNum {
+  padding-block: 20px;
+  display: flex;
+}
+
+.inputNum button {
+  font-size: 24px;
+  padding: 5px 12px;
+}
+.formContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 90%;
+}
+p {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  padding: 8px 20px;
+  margin-top: 10px;
+}
