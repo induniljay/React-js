@@ -53,25 +53,91 @@ export default function App() {
             </div>
           </div>
 
-          <p className="message">
-            Step {step} : {messages[step - 1]}
-          </p>
+          {/* <p className="message">
+            <h3> Step {step}</h3> : {messages[step - 1]}
+          </p> */}
+
+          <StepMessage step={step}>{messages[step - 1]}</StepMessage>
+
           <div className="buttons">
-            <button
+            {/* child pros enables us to pass, props + JSX to out child (reusable) components */}
+            <Button
+              onClick={handlePrevious}
+              backgroundColor="#7950f2"
+              textColor="#fff"
+            >
+              {" "}
+              <span>👈</span> Previous
+            </Button>
+
+            <Button
+              onClick={handleNext}
+              backgroundColor="#7950f2"
+              textColor="#fff"
+            >
+              Next <span>👉</span>
+            </Button>
+
+            {/* 
+            this is ok but when increaseing of atribute that but has it get messy
+            <Button
+              onClick={handlePrevious}
+              backgroundColor="#7950f2"
+              textColor="#fff"
+              text="Previous"
+              emoji="👈"
+            />
+            <Button
+              onClick={handleNext}
+              backgroundColor="#7950f2"
+              textColor="#fff"
+              text="Next"
+              emoji="👉"
+            /> */}
+            {/* <button
               style={{ backgroundColor: "#7950f2", color: "#fff" }}
               onClick={handlePrevious}
             >
               Previous
-            </button>
-            <button
+            </button> */}
+            {/* <button
               style={{ backgroundColor: "#7950f2", color: "#fff" }}
               onClick={handleNext}
             >
               Next
-            </button>
+            </button> */}
           </div>
         </div>
       )}
     </>
+  );
+}
+
+// function Button({ onClick, textColor, backgroundColor, text, emoji }) {
+//   return (
+//     <button
+//       style={{ backgroundColor: backgroundColor, color: textColor }}
+//       onClick={onClick}
+//     >
+//       <span>{text === "Next" ? `${text} ${emoji}` : `${emoji} ${text}`}</span>
+//     </button>
+//   );
+// }
+function Button({ onClick, textColor, backgroundColor, children }) {
+  return (
+    <button
+      style={{ backgroundColor: backgroundColor, color: textColor }}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+}
+
+function StepMessage({ step, children }) {
+  return (
+    <p className="message">
+      <h3> Step {step}</h3> {children}
+    </p>
   );
 }
