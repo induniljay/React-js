@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+}
+
+button {
+  display: block;
+  padding: 10px 20px;
+  margin: 20px;
+}
