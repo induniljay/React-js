@@ -1,0 +1,64 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🎌",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": "73930385"
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🎌",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.46635901755316,
+        "lng": -3.7133789062500004
+      },
+      "id": "17806751"
+    },
+    {
+      "id": "3d54",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-02-07T08:53:31.217Z",
+      "notes": "",
+      "position": {
+        "lat": "51.32771271402524",
+        "lng": "-0.087890625"
+      }
+    },
+    {
+      "id": "8c13",
+      "cityName": "Gravesend",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-02-07T09:00:31.573Z",
+      "notes": "",
+      "position": {
+        "lat": "51.42395308168742",
+        "lng": "0.48339843750000006"
+      }
+    },
+    {
+      "id": "afbc",
+      "cityName": "Mahaoya",
+      "country": "Sri Lanka",
+      "emoji": "🇱🇰",
+      "date": "2024-02-08T07:34:03.037Z",
+      "notes": "",
+      "position": {
+        "lat": "7.625912423309986",
+        "lng": "81.36133291763426"
+      }
+    }
+  ]
+}
